@@ -1,0 +1,8 @@
+resources:
+  pipelines:
+    viewcatalogtest_pipeline:
+      name: viewcatalogtest_pipeline
+      target: viewcatalogtest_${bundle.environment}
+      libraries:
+        - notebook:
+            path: ../../src/dlt_pipeline.ipynb
